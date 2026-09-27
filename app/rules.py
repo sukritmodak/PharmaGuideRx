@@ -1,10 +1,16 @@
 from pathlib import Path
 import json
 
-DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "gene_drug_demo.json"
+ROOT = Path(__file__).resolve().parents[1]
+DATA_PATH = ROOT / "data" / "gene_drug_demo.json"
+PATIENT_PATH = ROOT / "data" / "sample_patient_profiles.json"
 
 def load_rules():
     with DATA_PATH.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+def load_profiles():
+    with PATIENT_PATH.open("r", encoding="utf-8") as f:
         return json.load(f)
 
 def interpret(gene, drug, phenotype):
