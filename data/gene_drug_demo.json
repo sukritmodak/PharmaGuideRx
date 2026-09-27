@@ -2,41 +2,320 @@
   {
     "gene": "CYP2C19",
     "drug": "Clopidogrel",
-    "phenotypes": ["Poor metabolizer"],
-    "interpretation": "Reduced CYP2C19 activation can reduce formation of the active metabolite.",
-    "action": "Consider an alternative antiplatelet strategy according to current clinical guidance.",
-    "evidence": "Educational rule; verify the current CPIC guideline before clinical use."
+    "phenotypes": [
+      "Poor metabolizer"
+    ],
+    "example_diplotype": "*2/*2",
+    "interpretation": "Reduced CYP2C19 activity can reduce conversion of clopidogrel to its active metabolite.",
+    "action": "For demonstration only: verify current CPIC guidance when considering an alternative antiplatelet strategy.",
+    "evidence": "CPIC clopidogrel/CYP2C19 guidance; verify the current version before clinical use."
+  },
+  {
+    "gene": "CYP2C19",
+    "drug": "Omeprazole",
+    "phenotypes": [
+      "Rapid metabolizer"
+    ],
+    "example_diplotype": "*1/*17",
+    "interpretation": "Increased CYP2C19 activity may lower exposure to some proton-pump inhibitors.",
+    "action": "For demonstration only: consider current guideline recommendations and clinical context.",
+    "evidence": "CPIC PPI/CYP2C19 guidance; verify the current version before clinical use."
+  },
+  {
+    "gene": "CYP2C19",
+    "drug": "Voriconazole",
+    "phenotypes": [
+      "Rapid metabolizer"
+    ],
+    "example_diplotype": "*1/*17",
+    "interpretation": "Increased CYP2C19 activity may be associated with lower voriconazole exposure.",
+    "action": "For demonstration only: verify current CPIC guidance and therapeutic drug monitoring requirements.",
+    "evidence": "CPIC voriconazole/CYP2C19 guidance."
   },
   {
     "gene": "CYP2D6",
     "drug": "Codeine",
-    "phenotypes": ["Poor metabolizer"],
-    "interpretation": "Reduced conversion of codeine to morphine may reduce analgesic effect.",
-    "action": "Consider a non-codeine analgesic according to current clinical guidance.",
-    "evidence": "Educational rule; verify current CPIC/FDA information before clinical use."
+    "phenotypes": [
+      "Poor metabolizer"
+    ],
+    "example_diplotype": "*4/*4",
+    "interpretation": "Reduced CYP2D6 activity can decrease conversion of codeine to morphine.",
+    "action": "For demonstration only: verify current opioid pharmacogenomics guidance before therapy decisions.",
+    "evidence": "CPIC opioid/CYP2D6 guidance."
+  },
+  {
+    "gene": "CYP2D6",
+    "drug": "Codeine",
+    "phenotypes": [
+      "Ultrarapid metabolizer"
+    ],
+    "example_diplotype": "*1xN/*1",
+    "interpretation": "Increased CYP2D6 activity can increase conversion of codeine to morphine.",
+    "action": "For demonstration only: verify current guidance because increased active-metabolite exposure can be clinically important.",
+    "evidence": "CPIC opioid/CYP2D6 guidance."
+  },
+  {
+    "gene": "CYP2D6",
+    "drug": "Tamoxifen",
+    "phenotypes": [
+      "Intermediate metabolizer"
+    ],
+    "example_diplotype": "*1/*4",
+    "interpretation": "Reduced CYP2D6 activity may reduce formation of active tamoxifen metabolites.",
+    "action": "For demonstration only: verify current CPIC guidance and oncology-specific clinical context.",
+    "evidence": "CPIC tamoxifen/CYP2D6 guidance."
+  },
+  {
+    "gene": "CYP2D6",
+    "drug": "Atomoxetine",
+    "phenotypes": [
+      "Poor metabolizer"
+    ],
+    "example_diplotype": "*4/*4",
+    "interpretation": "Reduced CYP2D6 activity can increase atomoxetine exposure compared with normal metabolism.",
+    "action": "For demonstration only: verify current CPIC guidance and patient-specific factors.",
+    "evidence": "CPIC atomoxetine/CYP2D6 guidance."
+  },
+  {
+    "gene": "CYP2D6",
+    "drug": "Tramadol",
+    "phenotypes": [
+      "Ultrarapid metabolizer"
+    ],
+    "example_diplotype": "*1xN/*1",
+    "interpretation": "Increased CYP2D6 activity can increase formation of the active metabolite of tramadol.",
+    "action": "For demonstration only: verify current opioid guidance before making a therapy decision.",
+    "evidence": "CPIC opioid/CYP2D6 guidance."
+  },
+  {
+    "gene": "CYP2C9",
+    "drug": "Warfarin",
+    "phenotypes": [
+      "Intermediate metabolizer"
+    ],
+    "example_diplotype": "*1/*3",
+    "interpretation": "Reduced CYP2C9 activity can affect warfarin clearance and dose requirements.",
+    "action": "For demonstration only: use a validated warfarin dosing approach and current guideline when applicable.",
+    "evidence": "CPIC warfarin/CYP2C9 guidance."
+  },
+  {
+    "gene": "VKORC1",
+    "drug": "Warfarin",
+    "phenotypes": [
+      "Decreased expression"
+    ],
+    "example_diplotype": "-1639G>A",
+    "interpretation": "The VKORC1 variant example is associated with altered warfarin sensitivity.",
+    "action": "For demonstration only: interpret VKORC1 together with relevant clinical and genetic factors.",
+    "evidence": "CPIC warfarin/VKORC1 guidance."
+  },
+  {
+    "gene": "CYP4F2",
+    "drug": "Warfarin",
+    "phenotypes": [
+      "Decreased function"
+    ],
+    "example_diplotype": "*3 carrier example",
+    "interpretation": "CYP4F2 variation can contribute to differences in vitamin K oxidation and warfarin dose requirements.",
+    "action": "For demonstration only: interpret alongside CYP2C9, VKORC1 and clinical factors.",
+    "evidence": "CPIC warfarin/CYP4F2 guidance."
   },
   {
     "gene": "TPMT",
-    "drug": "Thiopurines",
-    "phenotypes": ["Intermediate metabolizer"],
-    "interpretation": "Reduced TPMT activity may increase exposure to active thiopurine metabolites.",
-    "action": "A lower starting dose and careful monitoring may be considered according to current guidance.",
-    "evidence": "Educational rule; verify the current CPIC guideline and patient-specific factors."
+    "drug": "Azathioprine",
+    "phenotypes": [
+      "Intermediate metabolizer"
+    ],
+    "example_diplotype": "*1/*3A",
+    "interpretation": "Reduced TPMT activity can increase exposure to active thiopurine metabolites.",
+    "action": "For demonstration only: verify current thiopurine dosing guidance and monitor appropriately.",
+    "evidence": "CPIC thiopurine/TPMT guidance."
+  },
+  {
+    "gene": "TPMT",
+    "drug": "Mercaptopurine",
+    "phenotypes": [
+      "Poor metabolizer"
+    ],
+    "example_diplotype": "*3A/*3A",
+    "interpretation": "Very low TPMT activity can markedly increase risk of thiopurine toxicity.",
+    "action": "For demonstration only: verify current CPIC guidance before any treatment decision.",
+    "evidence": "CPIC thiopurine/TPMT guidance."
+  },
+  {
+    "gene": "NUDT15",
+    "drug": "Mercaptopurine",
+    "phenotypes": [
+      "Intermediate metabolizer"
+    ],
+    "example_diplotype": "*1/*3",
+    "interpretation": "Reduced NUDT15 function can increase susceptibility to thiopurine-related toxicity.",
+    "action": "For demonstration only: verify current CPIC thiopurine guidance.",
+    "evidence": "CPIC thiopurine/NUDT15 guidance."
   },
   {
     "gene": "DPYD",
-    "drug": "Fluoropyrimidines",
-    "phenotypes": ["Intermediate metabolizer"],
-    "interpretation": "Reduced DPD activity can increase fluoropyrimidine toxicity risk.",
-    "action": "Dose modification or an alternative may be considered according to current guidance.",
-    "evidence": "Educational rule; verify current CPIC/DPWG guidance."
+    "drug": "Fluorouracil",
+    "phenotypes": [
+      "Intermediate metabolizer"
+    ],
+    "example_diplotype": "Reduced-function allele example",
+    "interpretation": "Reduced DPD activity can increase fluoropyrimidine exposure and toxicity risk.",
+    "action": "For demonstration only: verify current CPIC/DPWG guidance before treatment decisions.",
+    "evidence": "CPIC fluoropyrimidine/DPYD guidance."
+  },
+  {
+    "gene": "DPYD",
+    "drug": "Capecitabine",
+    "phenotypes": [
+      "Normal metabolizer"
+    ],
+    "example_diplotype": "No actionable DPYD variant in demo",
+    "interpretation": "No reduced-function DPYD phenotype is represented in this synthetic example.",
+    "action": "For demonstration only: clinical treatment still requires standard assessment and current guidance.",
+    "evidence": "CPIC fluoropyrimidine/DPYD guidance."
   },
   {
     "gene": "SLCO1B1",
     "drug": "Simvastatin",
-    "phenotypes": ["Decreased function"],
-    "interpretation": "Reduced transporter function can increase simvastatin exposure and myopathy risk.",
-    "action": "Consider an alternative statin or adjusted therapy according to current guidance.",
-    "evidence": "Educational rule; verify current CPIC guidance."
+    "phenotypes": [
+      "Decreased function"
+    ],
+    "example_diplotype": "*1/*5",
+    "interpretation": "Reduced SLCO1B1 transporter function can increase simvastatin exposure.",
+    "action": "For demonstration only: verify current statin guidance when selecting or dosing therapy.",
+    "evidence": "CPIC statin/SLCO1B1 guidance."
+  },
+  {
+    "gene": "ABCG2",
+    "drug": "Rosuvastatin",
+    "phenotypes": [
+      "Decreased function"
+    ],
+    "example_diplotype": "*1/*2 example",
+    "interpretation": "Reduced ABCG2 transporter function may increase rosuvastatin exposure.",
+    "action": "For demonstration only: verify current statin guidance and clinical context.",
+    "evidence": "CPIC statin/ABCG2 guidance."
+  },
+  {
+    "gene": "CYP3A5",
+    "drug": "Tacrolimus",
+    "phenotypes": [
+      "Intermediate metabolizer"
+    ],
+    "example_diplotype": "*1/*3",
+    "interpretation": "Presence of a functional CYP3A5 allele can contribute to faster tacrolimus metabolism than in nonexpressers.",
+    "action": "For demonstration only: verify current CPIC tacrolimus guidance and therapeutic drug monitoring requirements.",
+    "evidence": "CPIC tacrolimus/CYP3A5 guidance."
+  },
+  {
+    "gene": "CYP2B6",
+    "drug": "Efavirenz",
+    "phenotypes": [
+      "Poor metabolizer"
+    ],
+    "example_diplotype": "*6/*6 example",
+    "interpretation": "Reduced CYP2B6 activity can increase efavirenz exposure.",
+    "action": "For demonstration only: verify current CPIC guidance and treatment context.",
+    "evidence": "CPIC efavirenz/CYP2B6 guidance."
+  },
+  {
+    "gene": "UGT1A1",
+    "drug": "Atazanavir",
+    "phenotypes": [
+      "Poor metabolizer"
+    ],
+    "example_diplotype": "*28/*28 example",
+    "interpretation": "Reduced UGT1A1 activity can increase bilirubin levels during atazanavir therapy.",
+    "action": "For demonstration only: verify current UGT1A1/atazanavir guidance and clinical context.",
+    "evidence": "CPIC atazanavir/UGT1A1 guidance."
+  },
+  {
+    "gene": "HLA-B",
+    "drug": "Abacavir",
+    "phenotypes": [
+      "HLA-B*57:01 positive"
+    ],
+    "example_diplotype": "*57:01 present",
+    "interpretation": "The HLA-B*57:01 risk allele is associated with abacavir hypersensitivity risk.",
+    "action": "For demonstration only: verify current HLA-B*57:01 guidance before abacavir exposure.",
+    "evidence": "CPIC HLA-B/abacavir guidance."
+  },
+  {
+    "gene": "HLA-B",
+    "drug": "Allopurinol",
+    "phenotypes": [
+      "HLA-B*58:01 positive"
+    ],
+    "example_diplotype": "*58:01 present",
+    "interpretation": "HLA-B*58:01 is associated with increased risk of severe cutaneous adverse reactions to allopurinol.",
+    "action": "For demonstration only: verify current guideline recommendations before therapy decisions.",
+    "evidence": "CPIC HLA-B/allopurinol guidance."
+  },
+  {
+    "gene": "HLA-B",
+    "drug": "Carbamazepine",
+    "phenotypes": [
+      "HLA-B*15:02 positive"
+    ],
+    "example_diplotype": "*15:02 present",
+    "interpretation": "HLA-B*15:02 is associated with increased risk of severe cutaneous reactions with carbamazepine in relevant populations.",
+    "action": "For demonstration only: verify current HLA guidance and ancestry/testing context.",
+    "evidence": "CPIC HLA-B/carbamazepine guidance."
+  },
+  {
+    "gene": "HLA-A",
+    "drug": "Carbamazepine",
+    "phenotypes": [
+      "HLA-A*31:01 positive"
+    ],
+    "example_diplotype": "*31:01 present",
+    "interpretation": "HLA-A*31:01 is associated with increased risk of several carbamazepine hypersensitivity phenotypes.",
+    "action": "For demonstration only: verify current HLA-A/carbamazepine guidance.",
+    "evidence": "CPIC HLA-A/carbamazepine guidance."
+  },
+  {
+    "gene": "G6PD",
+    "drug": "Rasburicase",
+    "phenotypes": [
+      "G6PD deficient"
+    ],
+    "example_diplotype": "Deficiency phenotype example",
+    "interpretation": "G6PD deficiency can increase the risk of hemolysis with oxidant drugs such as rasburicase.",
+    "action": "For demonstration only: verify current G6PD guidance and contraindication information.",
+    "evidence": "CPIC G6PD guidance."
+  },
+  {
+    "gene": "CFTR",
+    "drug": "Ivacaftor",
+    "phenotypes": [
+      "Responsive CFTR variant"
+    ],
+    "example_diplotype": "CFTR variant example",
+    "interpretation": "Some CFTR variants can predict responsiveness to CFTR modulator therapy.",
+    "action": "For demonstration only: verify the approved variant list and current product information.",
+    "evidence": "CPIC CFTR/ivacaftor guidance."
+  },
+  {
+    "gene": "NAT2",
+    "drug": "Hydralazine",
+    "phenotypes": [
+      "Slow acetylator"
+    ],
+    "example_diplotype": "Slow-acetylator example",
+    "interpretation": "NAT2 acetylator status can influence hydralazine metabolism.",
+    "action": "For demonstration only: verify current guidance and clinical evidence before interpretation.",
+    "evidence": "CPIC NAT2/hydralazine guidance."
+  },
+  {
+    "gene": "CYP2B6",
+    "drug": "Sertraline",
+    "phenotypes": [
+      "Intermediate metabolizer"
+    ],
+    "example_diplotype": "*1/*6 example",
+    "interpretation": "CYP2B6 variation may contribute to differences in sertraline exposure.",
+    "action": "For demonstration only: verify the current CPIC antidepressant guideline.",
+    "evidence": "CPIC serotonin reuptake inhibitor/CYP2B6 guidance."
   }
 ]
