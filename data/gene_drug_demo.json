@@ -1,0 +1,42 @@
+[
+  {
+    "gene": "CYP2C19",
+    "drug": "Clopidogrel",
+    "phenotypes": ["Poor metabolizer"],
+    "interpretation": "Reduced CYP2C19 activation can reduce formation of the active metabolite.",
+    "action": "Consider an alternative antiplatelet strategy according to current clinical guidance.",
+    "evidence": "Educational rule; verify the current CPIC guideline before clinical use."
+  },
+  {
+    "gene": "CYP2D6",
+    "drug": "Codeine",
+    "phenotypes": ["Poor metabolizer"],
+    "interpretation": "Reduced conversion of codeine to morphine may reduce analgesic effect.",
+    "action": "Consider a non-codeine analgesic according to current clinical guidance.",
+    "evidence": "Educational rule; verify current CPIC/FDA information before clinical use."
+  },
+  {
+    "gene": "TPMT",
+    "drug": "Thiopurines",
+    "phenotypes": ["Intermediate metabolizer"],
+    "interpretation": "Reduced TPMT activity may increase exposure to active thiopurine metabolites.",
+    "action": "A lower starting dose and careful monitoring may be considered according to current guidance.",
+    "evidence": "Educational rule; verify the current CPIC guideline and patient-specific factors."
+  },
+  {
+    "gene": "DPYD",
+    "drug": "Fluoropyrimidines",
+    "phenotypes": ["Intermediate metabolizer"],
+    "interpretation": "Reduced DPD activity can increase fluoropyrimidine toxicity risk.",
+    "action": "Dose modification or an alternative may be considered according to current guidance.",
+    "evidence": "Educational rule; verify current CPIC/DPWG guidance."
+  },
+  {
+    "gene": "SLCO1B1",
+    "drug": "Simvastatin",
+    "phenotypes": ["Decreased function"],
+    "interpretation": "Reduced transporter function can increase simvastatin exposure and myopathy risk.",
+    "action": "Consider an alternative statin or adjusted therapy according to current guidance.",
+    "evidence": "Educational rule; verify current CPIC guidance."
+  }
+]
